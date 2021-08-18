@@ -59,7 +59,7 @@ Step 1: Open postman
 
 Step 2: Send POST request to [http://localhost:3000/orders](http://localhost:3000/orders)
 
-Example request
+Example request body
 
 ```json
 {
