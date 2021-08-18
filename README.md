@@ -68,7 +68,7 @@ Example request
 }
 ```
 
-Example response
+Response
 
 ```json
 {
@@ -80,5 +80,27 @@ Example response
 ```
 
 Step 3: Check order success or not by sending GET request to [http://localhost:3000/orders/:id](http://localhost:3000/orders/:id) PS: \*Copy above id
+
+Response if payment success
+
+```json
+{
+  "id": "29708768-91fe-4a45-89b8-a678982913bb",
+  "item_name": "barang-barang",
+  "quantity": 2,
+  "status": "DELIVERED"
+}
+```
+
+Response if payment failed
+
+```json
+{
+  "id": "29708768-91fe-4a45-89b8-a678982913bb",
+  "item_name": "barang-barang",
+  "quantity": 2,
+  "status": "CANCELLED"
+}
+```
 
 ## Deploy using Kubernetes
