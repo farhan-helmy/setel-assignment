@@ -43,7 +43,7 @@ yarn install
 yarn start:dev
 ```
 
-App running at[http://localhost:3000](http://localhost:3000).
+App running at [http://localhost:3000](http://localhost:3000).
 
 ```bash
 cd payment-app
@@ -51,7 +51,7 @@ yarn install
 node src/index
 ```
 
-App running at[http://localhost:5000](http://localhost:5000).
+App running at [http://localhost:5000](http://localhost:5000).
 
 ## To get started
 
@@ -59,14 +59,18 @@ Step 1: Open postman
 
 Step 2: Send POST request to [http://localhost:3000/orders](http://localhost:3000/orders)
 
+Example request
+
 ```json
-example request
 {
   "item_name": "barang-barang",
   "quantity": 2
 }
+```
 
-example response
+Example response
+
+```json
 {
   "item_name": "barang-barang",
   "quantity": 2,
@@ -75,6 +79,6 @@ example response
 }
 ```
 
-Step 3: Check order success or not by sending GET request to [http://localhost:3000/orders/:id](http://localhost:3000/orders/:id)
+Step 3: Check order success or not by sending GET request to [http://localhost:3000/orders/:id](http://localhost:3000/orders/:id) PS: \*Copy above id
 
 ## Deploy using Kubernetes
