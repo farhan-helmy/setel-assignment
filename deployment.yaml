@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: setel-assignment
+  labels:
+    app: setel-assignment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: setel-assignment
+  template:
+    metadata:
+      labels:
+        app: setel-assignment
+    spec:
+      containers:
+        - name: order-app
+          image: farhanhelmy/order-app:latest
+          ports:
+            - containerPort: 3000
+        - name: payment-app
+          image: farhanhelmy/payment-app:latest
+          ports:
+            - containerPort: 5000

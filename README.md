@@ -104,3 +104,27 @@ Response if payment failed
 ```
 
 ## Deploy using Kubernetes
+
+Step 1: Run this command 
+
+```bash
+kubectl create -f deployment.yaml
+```
+
+Step 2: Check if any deployment and pods is running
+
+```bash
+kubectl get deployments,pods
+```
+
+Step 3: Expose service using cloud LB (Assuming you deploy this on cloud)
+
+```bash
+kubectl expose setel-assignment --type="LoadBalancer"
+```
+
+Step 4: Check if load balancer service is running
+
+```bash
+kubectl get services
+```
