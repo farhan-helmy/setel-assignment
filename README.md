@@ -7,8 +7,9 @@ Assignment for SETEL Backend engineer position. For the Order App I'm using Nest
 - Node 14
 - Git
 - Docker
+- minikube
 
-## Setup Redis and PostgreSQL
+## Setup Redis, PostgreSQL, minikube
 
 Redis for Queue and Jobs
 
@@ -27,6 +28,10 @@ Pgadmin to view data (optional):
 ```bash
 docker run --name pgadmin-nest -p 3001:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com'  -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret'  -d dpage/pgadmin4
 ```
+
+Minikube setup
+
+[https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
 
 ## Application Setup
 
